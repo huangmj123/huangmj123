@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap');
+:root {
+    --vertical-space: 2rem;
+    --horizontal-space: 3rem;
+
+    --myGray: #8e9695;
+    --myYellow: #FFEB4D;
+    --myBlue:#9ACFDD;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: var(--myGray);
+    background-image: url(http://www.transparenttextures.com/patterns/maze-black.png);
+}
+
+body#about img {
+    height: 15em;
+}
+
+
+p {
+    max-width: 50em;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+    font-family: 'Montserrat', sans-serif;
+    color:var(--myBlue);
+}
+
+a{
+    color:var(--myBlue);
+    text-decoration-color:var(--myYellow);
+    font-weight: bold;
+}
+
+a:hover{
+    color:var(--myYellow);
+}
+
+body {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas: "head head"
+                         "nav nav"
+                         "main main"
+                         "foot foot";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+@media screen and (min-width: 700px){
+    body{
+        grid-template-areas: "head head"
+                             "nav main"
+                             "foot foot";
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: auto 1fr auto;
+
+    }
+}
+
+body>* {
+    padding-left: var(--horizontal-space);
+    padding-right: var(--horizontal-space);
+}
+
+header {
+    grid-area: head;
+}
+
+nav {
+    grid-area: nav;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: foot;
+    font-size: 15px;
+}
+
+header,
+footer {
+    padding-top:var(--vertical-space);
+    padding-bottom: var(--vertical-space);
+}
+
+header h1,
+footer h1 {
+    margin: 0;
+}
+
+body#portfolio ul#portfolioItems {
+    display:flex;
+    flex-wrap: wrap;
+    flex:1;
+    list-style-type: none;
+    padding:0;
+}
+
+/* body#portfolio ul#portfolioItems li {
+    flex-basis: 48%;
+    padding-right: 2%;
+} */
+
+body#portfolio ul#portfolioItems li img {
+    max-width: 100%;
+}
+
+#darkModeButton{
+    background-color: black;
+    color:white;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+}
+@media screen and (min-width: 700px){
+    body#portfolio ul#portfolioItems li {
+        flex-basis: 48%;
+        padding-right: 2%;
+    }
+}
