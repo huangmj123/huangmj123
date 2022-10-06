@@ -29,33 +29,47 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-8">
                 <div id="clock">Clock</div>
-                <div id="time-text">You're gonna give a shitty message based on the time of day</div>
-                <div id="slider">
-                    <ul id="slideWrap">
-                        <li><img src="images/wallpaperSlider/img1.jpg" alt=""></li>
-                        <li><img src="images/wallpaperSlider/img2.jpg" alt=""></li>
-                        <li><img src="images/wallpaperSlider/img3.jpg" alt=""></li>
-                        <li><img src="images/wallpaperSlider/img4.jpeg" alt=""></li>
-                        <li><img src="images/wallpaperSlider/img5.jpeg" alt=""></li>
-                        <li><img src="images/wallpaperSlider/img6.jpeg" alt=""></li>
-                        <li><img src="images/wallpaperSlider/img7.jpg" alt=""></li>
-                        <li><img src="images/wallpaperSlider/img8.jpg" alt=""></li>
-                    </ul>
-                    <a id="prev" href="#">&#8810;</a>
-                    <a id="next" href="#">&#8811;</a>
-                    <!-- at some point come back and have this code be autopopulated-->
+                <div id="time-text">You're gonna get a message based on the time of day</div>
+                <div class="row align-items-start" style="margin: 0 0 0 0;">
+                    <div class="col-sm-6">
+                        <div id="slider">
+                            <ul id="slideWrap">
+                                <li><img src="images/wallpaperSlider/img1.jpg" alt=""></li>
+                                <li><img src="images/wallpaperSlider/img2.jpg" alt=""></li>
+                                <li><img src="images/wallpaperSlider/img3.jpg" alt=""></li>
+                                <li><img src="images/wallpaperSlider/img4.jpeg" alt=""></li>
+                                <li><img src="images/wallpaperSlider/img5.jpeg" alt=""></li>
+                                <li><img src="images/wallpaperSlider/img6.jpeg" alt=""></li>
+                                <li><img src="images/wallpaperSlider/img7.jpg" alt=""></li>
+                                <li><img src="images/wallpaperSlider/img8.jpg" alt=""></li>
+                            </ul>
+                            <a id="prev" href="#">&#8810;</a>
+                            <a id="next" href="#">&#8811;</a>
+                            <!-- at some point come back and have this code be autopopulated-->
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+
+                        <iframe width="480" height="360" title="Weather Radar"
+                            src="https://embed.windy.com/embed2.html?lat=39.884&lon=-86.517&detailLat=39.470&detailLon=-87.410&width=480&height=360&zoom=8&level=surface&overlay=rain&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1"></iframe>
+                    </div>
+
                 </div>
-                <iframe width="400" height="200" src="https://www.youtube.com/embed/EG7N7bNWNL8"
+                <div style="padding-left:15px">
+                    <iframe width="480" height="360" src="https://www.youtube.com/embed/BkkioAu-BR8"
                     title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+                </div>
+                
+
             </div>
         </div>
     </div>
 
 
     <footer>
-        A little fun thing to throw up on my TV
+        A little fun thing to throw up on my TV- Dj
     </footer>
 </body>
 
@@ -64,4 +78,6 @@
 <!-- 
 https://weatherwidget.org/ 
 https://dev.to/code_mystery/automatic-image-slider-using-html-css-javascript-nf8
+https://www.windy.com/-Embed-widget-on-page/widgets?39.464,-87.353,5
+publicalbum.org
 -->
