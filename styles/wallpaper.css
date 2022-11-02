@@ -87,4 +87,40 @@ footer{
     text-shadow: 0;
   }
     
-  
+  .css-1dbjc4n r-14lw9ot r-1ets6dv r-1q9bdsx r-rs99b7 r-1udh08x {
+    max-height: 100%;
+  }
+
+  .note {
+    width: 240px;
+    height: 240px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    float: left;
+    margin: 9px 5px 9px 5px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    background-color: #7A4FE4;
+    color:white;
+  }
+
+  .sticky1 {
+    transform: rotate(-6deg);
+    /* -webkit-transform: rotate(-3.5deg);
+    -moz-transform: rotate(-3.5deg); */
+    /* --myGray: #8e9695;
+    --myYellow: #FFEB4D;
+    --myBlue:#9ACFDD; */
+  }
+
+  .sticky2 {
+    margin-left:-15px;
+    margin-right: -10px;
+  }
+
+  .note textarea {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height:100%;
+    width:100%;
+    background-color: #7A4FE4;
+    color:white;
+  }
