@@ -64,7 +64,7 @@ var responsiveSlider = function () {
     -moz-transform: rotate(-3.5deg); */
     const val = document.getElementById("newTilt").value
     console.log(val)
-    const bodies = document.querySelectorAll(".sticky1");
+    const bodies = document.querySelectorAll(".note");
     for(body of bodies){
       body.style= `transform: rotate(${val} deg); -webkit-transform: rotate(${val}deg); -moz-transform: rotate(${val}deg);`;
     }
@@ -129,6 +129,7 @@ var getTimeMessage = function () {
         document.getElementById("time-text").innerHTML = `We couldn't get the time that's disappointing`; break;
     }
   }
+
 }
 
 window.onload = function () {
