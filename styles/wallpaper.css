@@ -107,22 +107,22 @@ footer{
     transform: rotate(-6deg);
   }
 
-  .sticky1 {
-    /* -webkit-transform: rotate(-3.5deg);
-    -moz-transform: rotate(-3.5deg); */
-    /* --myGray: #8e9695;
+  /* .sticky1 {
+    -webkit-transform: rotate(-3.5deg);
+    -moz-transform: rotate(-3.5deg);
+    --myGray: #8e9695;
     --myYellow: #FFEB4D;
-    --myBlue:#9ACFDD; */
+    --myBlue:#9ACFDD;
   }
 
   .sticky2 {
-    /* width:auto */
-    /* margin-left:-15px; */
-    /* margin-right: -10px; */
-  }
+    width:auto
+    margin-left:-15px;
+    margin-right: -10px;
+  } */
 
   #weather{
-    aspect-ratio: 1/1;
+    aspect-ratio: 4/3;
   }
   .note textarea {
     margin: 0 0 0 0;
@@ -136,7 +136,7 @@ footer{
   #pikachu{
     height: 50px;width:50px;
   }
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-height: 770px) {
     #twitterCol{
       max-height: 88vh;
     }
@@ -155,6 +155,20 @@ footer{
     #pikachu{
       height:25px;
       width:25px;
+    }
+  }
+
+  @media screen and(max-height:720px){
+    #clock{
+      font-size:40px;
+      margin-bottom: 5px;
+      height:auto
+    }
+    #time-text{
+      margin-bottom: 5px;
+    }
+    .note{
+      width:17%;
     }
   }
 
