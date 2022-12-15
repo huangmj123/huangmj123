@@ -36,7 +36,13 @@ var responsiveSlider = function () {
 
   var timerFunc = function () {
     const d = new Date();
-    document.getElementById("clock").innerHTML = d.getHours() + `:` + d.getMinutes() + ':' + d.getSeconds();
+    let h = d.getHours();
+    let m = d.getMinutes();
+    let s = d.getSeconds();
+    if(h<10){h = `0` + h};
+    if(m<10){m = `0` + m};
+    if(s<10){s = `0` + s};
+    document.getElementById("clock").innerHTML = h + `:` + m + ':' + s;
     if (d.getSeconds() % 12 == 0) {
       if (count < items) {
         slideList.style.left = "-" + count * sliderWidth + "px";
@@ -137,5 +143,7 @@ window.onload = function () {
   const d = new Date();
   document.getElementById("clock").innerHTML = d.getHours() + `:` + d.getMinutes() + ':' + d.getSeconds();
   getTimeMessage();
-  document.getElementById("newTilt").value = 0
+  document.getElementById("newTilt").value = 0;
+  console.log(window.innerHeight)
+  console.log(window.innerWidth)
 }
